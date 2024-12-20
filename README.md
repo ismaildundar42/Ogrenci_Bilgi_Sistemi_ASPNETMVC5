@@ -1,7 +1,7 @@
-📚 Öğrenci Bilgi Sistemi
+📚 **Öğrenci Bilgi Sistemi**
 Bu proje, ASP.NET MVC 5 kullanılarak geliştirilen bir Öğrenci Bilgi Yönetim Sistemidir. Eğitim kurumlarının öğrencilerin bilgilerini kolayca yönetebilmesini sağlamak amacıyla tasarlanmıştır.
 
-✨ Projenin Özellikleri
+✨ **Projenin Özellikleri**
 Öğrenci bilgilerini ekleme, görüntüleme, güncelleme ve silme (CRUD işlemleri)
 Katmanlı mimari (MVC - Model, View, Controller) yapısının uygulanması
 Modern ve duyarlı (responsive) bir kullanıcı arayüzü
@@ -17,7 +17,7 @@ Bu proje, yazılım geliştirme becerilerimi güçlendirirken, özellikle:
 MVC mimarisi ve katmanlı yapıyı anlamama,
 Veritabanı yönetimi ile web uygulamaları arasındaki ilişkiyi pekiştirmeme,
 Modern ve kullanıcı dostu arayüzler tasarlama konusunda pratik yapmama yardımcı oldu.
-📸 Ekran Görüntüleri
+📸 **Ekran Görüntüleri**
 ![1](https://github.com/user-attachments/assets/93697fc5-74fc-489a-8704-e468f5e99d29)
 ![2](https://github.com/user-attachments/assets/bd23740d-67c2-4293-b049-fb4170653900)
 ![3](https://github.com/user-attachments/assets/748ea411-cb20-4d3c-8173-fbeceb1cc087)
@@ -26,7 +26,7 @@ Modern ve kullanıcı dostu arayüzler tasarlama konusunda pratik yapmama yardı
 
 
 
-💡 Nasıl Kullanılır?
+💡 **Nasıl Kullanılır?**
 Bu projeyi klonlayın:
 bash
 Kodu kopyala
