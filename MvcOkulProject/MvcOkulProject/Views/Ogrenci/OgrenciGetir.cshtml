@@ -1,0 +1,29 @@
+﻿@model MvcOkulProject.Models.EntitiyFramework.tbl_ogrenciler
+@{
+    ViewBag.Title = "OgrenciGetir";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using (Html.BeginForm("OgrenciGuncelle", "Ogrenci", FormMethod.Post))
+{
+    <div>
+        @Html.LabelFor(m => m.OGRAD)
+        @Html.TextBoxFor(m => m.OGRAD, new { @class = "form-control" })
+        <br />
+        @Html.LabelFor(m => m.OGRSOYAD)
+        @Html.TextBoxFor(m => m.OGRSOYAD, new { @class = "form-control" })
+        <br />
+        @Html.LabelFor(m => m.OGRFOTOGRAF)
+        @Html.TextBoxFor(m => m.OGRFOTOGRAF, new { @class = "form-control" })
+        <br />
+        @Html.LabelFor(m => m.OGRCINSIYET)
+        @Html.DropDownListFor(m => m.OGRCINSIYET, ViewBag.CinsiyetListesi as List<SelectListItem>, "Lütfen bir cinsiyet seçin", new { @class = "form-control" })
+        <br />
+        @Html.LabelFor(m => m.OGRKULUP)
+        @Html.DropDownListFor(m => m.OGRKULUP, ViewBag.KulupListesi as List<SelectListItem>, "Lütfen bir kulüp seçin", new { @class = "form-control" })
+    </div>
+    @Html.HiddenFor(m => m.OGRID)
+    <br />
+    <button class="btn btn-success">Güncelle</button>
+}
+

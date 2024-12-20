@@ -1,0 +1,43 @@
+﻿@using MvcOkulProject.Models.EntitiyFramework
+@model List<tbl_sinavlar>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<table class="table table-bordered">
+    <tr>
+        <th>NOT ID</th>
+        <th>DERS AD</th>
+        <th>OGRENCİ NUMARA</th>
+        <th>OGRENCİ AD</th>
+        <th>OGRENCİ SOYAD</th>
+        <th>1.SINAV</th>
+        <th>2.SINAV</th>
+        <th>3.SINAV</th>
+        <th>PROJE</th>
+        <th>ORTALAMA</th>
+        <th>DURUM</th>
+        <th>GÜNCELLE</th>
+    </tr>
+    @foreach(var x in Model)
+            {
+                <tr>
+                    <td>@x.NOTID</td>
+                    <td>@x.tbl_dersler.DERSAD</td>
+                    <td>@x.OGRID</td>
+                    <td>@x.tbl_ogrenciler.OGRAD</td>
+                    <td>@x.tbl_ogrenciler.OGRSOYAD</td>
+                    <td>@x.SINAV1</td>
+                    <td>@x.SINAV2</td>
+                    <td>@x.SINAV3</td>
+                    <td>@x.PROJE</td>
+                    <td>@x.ORTALAMA</td>
+                    <td>@x.DURUM</td>
+                    <td>
+                        <a href="/Sinavlar/SinavGetir/@x.NOTID" class="form-check btn btn-warning">GÜNCELLE</a>
+                    </td>
+                </tr>
+            }
+</table>
+

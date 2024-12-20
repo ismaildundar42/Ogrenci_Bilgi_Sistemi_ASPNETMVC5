@@ -1,0 +1,41 @@
+﻿@model MvcOkulProject.Models.EntitiyFramework.tbl_ogrenciler
+
+@{
+    ViewBag.Title = "OgrenciEkle";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form class="form-group" method="post">
+
+    <div>
+        <label>Öğrenci Ad</label>
+        <input type="text" class="form-control" name="OGRAD" />
+    </div>
+    <br />
+    <div>
+        <label>Öğrenci Soyad</label>
+        <input type="text" class="form-control" name="OGRSOYAD" />
+    </div>
+    <br />
+    <div>
+        <label>Öğrenci Fotoğraf</label>
+        <input type="text" class="form-control" name="OGRFOTOGRAF" />
+    </div>
+    <br />
+    <div>
+        <label>Öğrenci Cinsiyet</label>
+        <select class="form-control" name="OGRCINSIYET">
+            <option value="Erkek">Erkek</option>
+            <option value="Kız">Kız</option>
+        </select>
+    </div>
+    <br />
+    <div>
+        <label>Öğrenci Kulüp</label>
+        @Html.DropDownList("OGRKULUP", (List<SelectListItem>)ViewBag.dgr, "Seçiniz", new { @class = "form-control" })
+    </div>
+    <br />
+    <div>
+        <button class="btn btn-info">Öğrenci Ekle</button>
+    </div>
+</form>

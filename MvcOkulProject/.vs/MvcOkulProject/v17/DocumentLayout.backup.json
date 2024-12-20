@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ismail\\source\\repos\\MvcOkulProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{63A19A8F-FBB9-440B-8130-5DFD6AAAE343}|MvcOkulProject\\MvcOkulProject.csproj|c:\\users\\ismail\\source\\repos\\mvcokulproject\\mvcokulproject\\views\\sinavlar\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{63A19A8F-FBB9-440B-8130-5DFD6AAAE343}|MvcOkulProject\\MvcOkulProject.csproj|solutionrelative:mvcokulproject\\views\\sinavlar\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ismail\\source\\repos\\MvcOkulProject\\MvcOkulProject\\Views\\Sinavlar\\Index.cshtml",
+              "RelativeDocumentMoniker": "MvcOkulProject\\Views\\Sinavlar\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ismail\\source\\repos\\MvcOkulProject\\MvcOkulProject\\Views\\Sinavlar\\Index.cshtml",
+              "RelativeToolTip": "MvcOkulProject\\Views\\Sinavlar\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-19T13:40:11.764Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

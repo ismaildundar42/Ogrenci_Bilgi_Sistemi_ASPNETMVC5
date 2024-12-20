@@ -1,0 +1,18 @@
+﻿@model MvcOkulProject.Models.EntitiyFramework.tbl_kulupler
+@{
+    ViewBag.Title = "KulupGetir";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using (Html.BeginForm("KulupGuncelle", "Kulupler", FormMethod.Post))
+{
+    @Html.HiddenFor(model => model.KULUPID)
+    <div>
+        <label for="kulupAd">Kulüp Adı:</label>
+        @Html.TextBoxFor(model => model.KULUPAD, new { @class = "form-control" })
+    </div>
+    <label for="kulupKontenjan">Kontenjan:</label>
+    @Html.TextBoxFor(model => model.KULUPKONTENJAN, new { @class = "form-control" })
+    <br />
+    <button type="submit" class="btn btn-primary">Güncelle</button>
+}

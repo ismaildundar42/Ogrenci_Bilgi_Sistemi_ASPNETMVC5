@@ -1,0 +1,42 @@
+﻿@using MvcOkulProject.Models.EntitiyFramework
+@model List<tbl_ogrenciler>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<table class="table table-bordered">
+    <tr>
+        <th>OGRENCİ ID</th>
+        <th>OGRENCİ AD</th>
+        <th>OGRENCİ SOYAD</th>
+        <th>OGRENCİ FOTOĞRAF</th>
+        <th>OGRENCİ CİNSİYET</th>
+        <th>OGRENCİ KULÜP</th>
+        <th>İŞLEMLER</th>
+    </tr>
+    @foreach (var x in Model)
+    {
+        <tr>
+            <td>@x.OGRID</td>
+            <td>@x.OGRAD</td>
+            <td>@x.OGRSOYAD</td>
+            <td>
+                @if (!string.IsNullOrEmpty(x.OGRFOTOGRAF))
+                {
+                    <img src="@x.OGRFOTOGRAF" alt="Öğrenci Fotoğrafı" style="width:100px;height:auto;" />
+                }
+                else
+                {
+                    <span>Fotoğraf yok</span>
+                }
+            </td>
+            <td>@x.OGRCINSIYET</td>
+            <td>@x.tbl_kulupler.KULUPAD</td>  <!-- Kulüp adını ilişki üzerinden al -->
+            <td>
+                <a href="@Url.Action("OgrenciSil", "Ogrenci", new { id = x.OGRID })" class="btn btn-danger">SİL</a>
+                <a href="@Url.Action("OgrenciGetir", "Ogrenci", new { id = x.OGRID })" class="btn btn-warning">GÜNCELLE</a>
+            </td>
+        </tr>
+    }
+</table>

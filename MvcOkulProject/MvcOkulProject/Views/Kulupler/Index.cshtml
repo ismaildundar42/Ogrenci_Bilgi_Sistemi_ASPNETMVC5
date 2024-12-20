@@ -1,0 +1,29 @@
+﻿@using MvcOkulProject.Models.EntitiyFramework
+@model List<tbl_kulupler>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<table class="table table-bordered">
+    <div>
+    <tr>
+        <th>KULÜP ID</th>
+        <th>KULÜP AD</th>
+        <th>KULÜP KONTENJAN</th>
+        <th>İŞLEMLER</th>
+    </tr>
+    @foreach (var x in Model)
+    {
+        <tr>
+            <td>@x.KULUPID</td>
+            <td>@x.KULUPAD</td>
+            <td>@x.KULUPKONTENJAN</td>
+            <td>
+                <a href="/Kulupler/KulupSil/@x.KULUPID" class="btn btn-danger">SİL</a>
+                <a href="/Kulupler/KulupGetir/@x.KULUPID" class="btn btn-warning">GÜNCELLE</a>
+            </td>
+        </tr>
+    }
+</table>

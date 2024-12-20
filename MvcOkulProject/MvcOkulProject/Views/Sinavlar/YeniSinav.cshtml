@@ -1,0 +1,56 @@
+﻿@model MvcOkulProject.Models.EntitiyFramework.tbl_sinavlar
+@{
+    ViewBag.Title = "YeniSinav";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form class="form-group" method="post">
+
+    <div>
+        <label>Öğrenci ID</label>
+        <input type="text" class="form-control" name="OGRID" />
+    </div>
+    <br />
+    <div>
+        <div>
+            <label>Ders Ad</label>
+            @Html.DropDownList("DERSID", (SelectList)ViewBag.DersListesi, "Bir Ders Seçin", new { @class = "form-control" })
+        </div>
+
+    </div>
+    <br />
+    <div>
+        <label>Sınav 1</label>
+        <input type="text" class="form-control" name="SINAV1" />
+    </div>
+    <br />
+    <div>
+        <label>Sınav 2</label>
+        <input type="text" class="form-control" name="SINAV2" />
+    </div>
+    <br />
+    <div>
+        <label>Sınav 3</label>
+        <input type="text" class="form-control" name="SINAV3" />
+    </div>
+    <br />
+    <div>
+        <label>Proje</label>
+        <input type="text" class="form-control" name="PROJE" />
+    </div>
+    <br />
+    <div>
+        <label>Ortalama</label>
+        <input type="text" class="form-control" name="ORTALAMA" />
+    </div>
+    <br />
+    <div>
+        <label>Durum</label>
+        <input type="text" class="form-control" name="DURUM" />
+    </div>
+    <br />
+    <div>
+        <button class="btn btn-info">Öğrenci Not Bilgisi Ekle</button>
+    </div>
+</form>
+

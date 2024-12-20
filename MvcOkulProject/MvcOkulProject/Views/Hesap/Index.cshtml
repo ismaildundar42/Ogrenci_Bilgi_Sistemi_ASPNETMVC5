@@ -1,0 +1,39 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Hesap Makinesi</h2>
+
+<form class="form-group" method="post">
+
+    <div class="mb-3">
+        <label for="s1">1. Sınav</label>
+        <input type="text" class="form-control" name="s1" id="s1" />
+    </div>
+
+    <div class="mb-3">
+        <label for="s2">2. Sınav</label>
+        <input type="text" class="form-control" name="s2" id="s2" />
+    </div>
+
+    <div class="mb-3">
+        <label for="s3">3. Sınav</label>
+        <input type="text" class="form-control" name="s3" id="s3" />
+    </div>
+
+    <div class="mb-3">
+        <label for="prj">Proje</label>
+        <input type="text" class="form-control" name="prj" id="prj" />
+    </div>
+
+    <div class="mb-3">
+        <button class="btn btn-warning">Ortalama Hesapla</button>
+    </div>
+
+    <div class="mb-3">
+        <label>Sonuç:</label>
+        <span>@ViewBag.snc</span>
+    </div>
+
+</form>
